@@ -31,7 +31,7 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Barrio-Regular.ttf", "node_modules/@expo-google-fonts/400Regular"]
+          "fonts": ["./assets/fonts/Barrio-Regular.ttf", "node_modules/@expo-google-fonts/400Regular/PlayfairDisplay_400Regular.ttf"]
         }
       ]
     ]
