@@ -1,6 +1,6 @@
 import { Stack, useRouter } from 'expo-router';
 import { useFonts } from 'expo-font';
-//loading fonts
+//loading fonts hook. Add font to app.json too
 import * as SplashScreen from 'expo-splash-screen';
 //interacting with splashscreen
 import { useEffect } from 'react';
