@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { View, Text, Platform } from 'react-native';
 import { styles, primary, action } from '../theme/styles';
 import { useLocalSearchParams } from 'expo-router';
 
@@ -14,9 +14,10 @@ export default function Page(props) {
         style={[
           styles.txt,
           {
+            fontFamily: 'Playfair',
             color: Platform.select({
-              android: primary,
-              ios: action,
+              android: action,
+              ios: primary,
             }),
           },
         ]}

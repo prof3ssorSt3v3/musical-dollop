@@ -1,5 +1,6 @@
 import { Stack, useRouter } from 'expo-router';
 import { useFonts } from 'expo-font';
+import { PlayfairDisplay_400Regular } from '@expo-google-fonts/playfair-display';
 //loading fonts hook. Add font to app.json too
 import * as SplashScreen from 'expo-splash-screen';
 //interacting with splashscreen
@@ -12,8 +13,9 @@ SplashScreen.preventAutoHideAsync(); //allow us to control when the page shows
 export default function RootLayout() {
   const router = useRouter();
 
-  const [loaded] = useFonts({
+  const [loaded, error] = useFonts({
     Barrio: require('../../assets/fonts/Barrio-Regular.ttf'),
+    Playfair: PlayfairDisplay_400Regular,
   });
 
   useEffect(() => {
